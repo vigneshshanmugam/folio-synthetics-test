@@ -1,0 +1,14 @@
+{
+  "name": "folio-synthetics-test",
+  "version": "0.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vigneshshanmugam/folio-synthetics-test.git"
+  },
+  "homepage": "https://github.com/vigneshshanmugam/folio-synthetics-test#readme",
+  "dependencies": {
+    "folio": "^0.3.16",
+    "playwright-chromium": "^1.7.1"
+  }
+}
