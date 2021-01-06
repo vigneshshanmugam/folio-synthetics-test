@@ -8,7 +8,7 @@ import type {
   LaunchOptions,
   Page,
 } from "playwright-chromium";
-import { NetworkManager } from "./plugins";
+// import { NetworkManager } from "./plugins";
 
 config.timeout = 30000;
 
@@ -88,10 +88,10 @@ fixtures.page.init(async ({ context }, run) => {
 
 fixtures.session.init(async ({ context, page, network }, run) => {
   const session = await context.newCDPSession(page);
-  const manager = new NetworkManager();
-  manager.start(session);
+  // const manager = new NetworkManager();
+  // manager.start(session);
   await run(session);
-  const output = await manager.stop();
+  // const output = await manager.stop();
 });
 
 export const folio = fixtures.build();
